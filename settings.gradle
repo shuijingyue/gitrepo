@@ -1,0 +1,10 @@
+dependencyResolutionManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+    }
+}
+rootProject.name = "pro-ply-android"
+include ':app'
+include ':annotation'
+include ':compiler'

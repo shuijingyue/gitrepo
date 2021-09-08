@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable
+			name="vm"
+			type="pro.ply.data.vm.IndexViewModel"/>
+	</data>
+
+
+	<androidx.appcompat.widget.LinearLayoutCompat
+		android:id="@+id/root"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:context="pro.ply.ui.screen.IndexActivity">
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/finish"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="finish"/>
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/jump"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="jump"/>
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/send"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="send"/>
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
