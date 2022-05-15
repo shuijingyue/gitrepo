@@ -1,11 +1,11 @@
 package pro.ply.ui.screen
 
-import android.app.Instrumentation
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import pro.ply.R
+import pro.ply.data.bean.JavaObject
 import pro.ply.data.vm.IndexViewModel
 import pro.ply.databinding.ActivityIndexBinding
 
@@ -15,16 +15,30 @@ class IndexActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityIndexBinding
 
+    private val value = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_index)
-        binding.vm = vm
-        val am = Instrumentation.ActivityMonitor()
 
-
+        supportFragmentManager.beginTransaction()
+            .add(R.id.container, LifecycleFragment())
+            .commit()
     }
+
+    private fun hello(): String {
+        return "Hello"
+    }
+
+    private external fun objectFromJNI(): JavaObject
+
+    private external fun stringFromJNI(): String
 
     companion object {
         private const val TAG = "IndexActivity"
+
+        init {
+            System.loadLibrary("cplusplus");
+        }
     }
 }

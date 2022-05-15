@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<dimen name="designer_worksheet_dateline_height">65.45dp</dimen>
+	<dimen name="designer_worksheet_dateline_week_text_size">11.64dp</dimen>
+	<dimen name="designer_worksheet_dateline_date_text_size">23.27dp</dimen>
+
+	<dimen name="designer_worksheet_height">1000.81dp</dimen>
+	<dimen name="designer_worksheet_cell_height">21.81dp</dimen>
+
+	<dimen name="designer_worksheet_timeline_text_size">11.64dp</dimen>
+	<dimen name="designer_worksheet_timeline_padding_horizontal">11.64dp</dimen>
+</resources>

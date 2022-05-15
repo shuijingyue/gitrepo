@@ -1,0 +1,5 @@
+package pro.ply.ui.widget
+
+object Text {
+    const val s = "fdfdfdfdfdfdfddfdfdfdfsfdsfdsfdfsfsdfsfdsfsfsfdsfdsfsdfdsfsfdsfsfsfsdfsfsfsfsfsdfsfsdfsdfsfsfsdfsfdsfdsfdsfsfdsfsfdsfdsdfsdfsfdsfdsfsdfsddfsfdsdfdsfsdfsdfsfsdfsdfsfdsfsdfsfd"
+}
