@@ -4,7 +4,13 @@ dependencyResolutionManagement {
         maven { url 'https://maven.aliyun.com/repository/google' }
     }
 }
-rootProject.name = "pro-ply-android"
-include ':app'
-include ':annotation'
+rootProject.name = "gitrepo"
+include ':arch'
+include ':webview'
+include ':anno'
 include ':compiler'
+include ':app'
+include ':home'
+include ':notification'
+include ':mine'
+include ':explore'

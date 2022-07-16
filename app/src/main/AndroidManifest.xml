@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+	xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.INTERNET" />
 
 	<application
-        android:name="pro.ply.App"
-        android:allowBackup="true"
-        android:icon="@drawable/ic_app"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Primary"
-        tools:ignore="AllowBackup" >
+		android:name="pro.ply.gitrepo.App"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_app"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/Theme.Primary"
+		tools:ignore="AllowBackup">
 
-        <activity
-            android:name="pro.ply.ui.screen.IndexActivity"
-            android:screenOrientation="sensor"
-            android:exported="true" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-
-    </application>
-
+		<activity
+			android:name="pro.ply.gitrepo.ui.IndexActivity"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
 </manifest>

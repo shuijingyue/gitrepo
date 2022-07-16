@@ -8,5 +8,6 @@ java {
 }
 
 dependencies {
-    implementation project(":annotation")
+    implementation project(':anno')
 }
+

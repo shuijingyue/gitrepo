@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/main"
+	app:startDestination="@+id/home">
+
+	<fragment
+		android:id="@+id/home"
+		android:name="pro.ply.gitrepo.home.ui.HomeFragment">
+		<action
+			android:id="@+id/toProfile"
+			app:destination="@+id/profile"/>
+	</fragment>
+
+	<fragment
+		android:id="@+id/mine"
+		android:name="pro.ply.gitrepo.mine.ui.MineFragment">
+		<action
+			android:id="@+id/fromMineToHome"
+			app:destination="@+id/home"/>
+	</fragment>
+</navigation>

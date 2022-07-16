@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:title="home"
+		android:id="@+id/home"
+		android:icon="@drawable/ic_baseline_home_24"/>
+	<item android:title="notification"
+		android:id="@+id/notification"
+		android:icon="@drawable/ic_baseline_notifications_24"/>
+	<item android:title="explore"
+		android:id="@+id/explore"
+		android:icon="@drawable/ic_baseline_explore_24"/>
+	<item android:title="mine"
+		android:id="@+id/mine"
+		android:icon="@drawable/ic_baseline_person_24"/>
+</menu>
